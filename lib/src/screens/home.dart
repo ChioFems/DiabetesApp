@@ -46,7 +46,7 @@ class HomeScreen extends StatelessWidget {
                         shape: BoxShape.circle,
                       ),
                       // child: SvgPicture.asset("assets/icons/menu.svg"),
-                      child: Image.asset("assets/icons/menu1_white.png"),
+                      child: Image.asset("assets/icons/menu.png"),
                     ),
                   ),
                   Container(
@@ -54,7 +54,7 @@ class HomeScreen extends StatelessWidget {
                     alignment: Alignment.center,
                     height: 70,
                     width: 70,
-                    child: Image.asset("assets/icons/logo_white.png"),
+                    child: Image.asset("assets/icons/logo.png"),
                   ),
                   Text(
                     "Your Mobile Medical Care",
@@ -75,7 +75,7 @@ class HomeScreen extends StatelessWidget {
                       children: <Widget>[
                         CategoryCard(
                           title: "Self Recordings",
-                          imgSrc: "assets/icons/self_recordings.png",
+                          imgSrc: "assets/icons/recordings_menu.png",
                           press: () {
                             Navigator.push(
                                 context,
@@ -85,7 +85,7 @@ class HomeScreen extends StatelessWidget {
                         ),
                         CategoryCard(
                           title: "Life Style Data",
-                          imgSrc: "assets/icons/lifestyles.png",
+                          imgSrc: "assets/icons/lifestyle_menu.png",
                           press: () {
                             Navigator.push(
                                 context,
@@ -95,7 +95,7 @@ class HomeScreen extends StatelessWidget {
                         ),
                         CategoryCard(
                           title: "Education",
-                          imgSrc: "assets/icons/education.png",
+                          imgSrc: "assets/icons/education_menu.png",
                           press: () {
                             Navigator.push(
                                 context,
@@ -105,7 +105,7 @@ class HomeScreen extends StatelessWidget {
                         ),
                         CategoryCard(
                           title: "Medication",
-                          imgSrc: "assets/icons/medication.png",
+                          imgSrc: "assets/icons/medication_menu.png",
                           press: () {
                             Navigator.push(
                                 context,

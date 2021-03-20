@@ -79,7 +79,7 @@ class LifestylesCard extends StatelessWidget {
             child: Column(
               children: <Widget>[
                 //Icon(Icons.hourglass_empty, color: Colors.white),
-                Image.asset("assets/icons/self_recordings.png", height: 65),
+                Image.asset("assets/icons/recordings_menu.png", height: 65),
                 Spacer(),
                 Text(
                   "Fruits & Veggies",

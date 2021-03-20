@@ -21,7 +21,7 @@ class EducationScreen extends StatelessWidget {
             decoration: BoxDecoration(
               color: kEducationLightColor,
               image: DecorationImage(
-                image: AssetImage("assets/icons/education_clear1.png"),
+                image: AssetImage("assets/icons/education_page.png"),
                 fit: BoxFit.fitWidth,
               ),
             ),

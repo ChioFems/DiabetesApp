@@ -22,7 +22,7 @@ class RecordingsScreen extends StatelessWidget {
             decoration: BoxDecoration(
               color: kRecordingsLightColor,
               image: DecorationImage(
-                image: AssetImage("assets/icons/recordings_clear.png"),
+                image: AssetImage("assets/icons/recordings_page.png"),
                 fit: BoxFit.fitWidth,
               ),
             ),

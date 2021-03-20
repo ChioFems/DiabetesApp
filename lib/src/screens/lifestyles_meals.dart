@@ -131,14 +131,14 @@ class LifestylesMeals extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: <Widget>[
                     LifestylesQuestionCard(
-                      imgString: "assets/icons/self_recordings.png",
+                      imgString: "assets/icons/recordings_menu.png",
                       cardName: "Starch",
                       press: () {
                         createAlertDialog(context, key);
                       },
                     ),
                     LifestylesQuestionCard(
-                      imgString: "assets/icons/self_recordings.png",
+                      imgString: "assets/icons/recordings_menu.png",
                       cardName: "Vegetables",
                       press: () {
                         createAlertDialog(context, key);
@@ -151,7 +151,7 @@ class LifestylesMeals extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: <Widget>[
                     LifestylesQuestionCard(
-                      imgString: "assets/icons/self_recordings.png",
+                      imgString: "assets/icons/recordings_menu.png",
                       cardName: "Diary",
                       press: () {
                         createAlertDialog(context, key);
@@ -164,14 +164,14 @@ class LifestylesMeals extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: <Widget>[
                     LifestylesQuestionCard(
-                      imgString: "assets/icons/self_recordings.png",
+                      imgString: "assets/icons/recordings_menu.png",
                       cardName: "Fats",
                       press: () {
                         createAlertDialog(context, key);
                       },
                     ),
                     LifestylesQuestionCard(
-                      imgString: "assets/icons/self_recordings.png",
+                      imgString: "assets/icons/recordings_menu.png",
                       cardName: "Protein",
                       press: () {
                         createAlertDialog(context, key);

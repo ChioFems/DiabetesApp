@@ -20,7 +20,7 @@ class BottomNavBar extends StatelessWidget {
         children: <Widget>[
           BottomNavItem(
             title: "Home",
-            imgSrc: "assets/icons/home.png",
+            imgSrc: "assets/icons/home_nav.png",
             isActive: true,
             press: () {
               Navigator.pushReplacement(context,
@@ -29,7 +29,7 @@ class BottomNavBar extends StatelessWidget {
           ),
           BottomNavItem(
             title: "Life Style",
-            imgSrc: "assets/icons/lifestyle.png",
+            imgSrc: "assets/icons/lifestyle_nav.png",
             isActive: false,
             press: () {
               Navigator.pushReplacement(context,
@@ -38,7 +38,7 @@ class BottomNavBar extends StatelessWidget {
           ),
           BottomNavItem(
             title: "My Records",
-            imgSrc: "assets/icons/my_records.png",
+            imgSrc: "assets/icons/my_records_nav.png",
             isActive: false,
             press: () {
               Navigator.pushReplacement(context,

@@ -23,7 +23,7 @@ class LifestyleScreen extends StatelessWidget {
             decoration: BoxDecoration(
               color: kLifestyleLightColor,
               image: DecorationImage(
-                image: AssetImage("assets/icons/lifestyles_clear.png"),
+                image: AssetImage("assets/icons/lifestyle_page.png"),
                 fit: BoxFit.fitWidth,
               ),
             ),

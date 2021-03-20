@@ -21,7 +21,7 @@ class MedicationScreen extends StatelessWidget {
             decoration: BoxDecoration(
               color: kMedicationLightColor,
               image: DecorationImage(
-                image: AssetImage("assets/icons/medication_clear.png"),
+                image: AssetImage("assets/icons/medication_page.png"),
                 fit: BoxFit.fitWidth,
               ),
             ),
