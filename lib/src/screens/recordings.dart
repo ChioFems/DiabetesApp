@@ -1,7 +1,7 @@
-import 'package:diabetes_app/src/screens/recordings_questionnaire.dart';
-import 'package:diabetes_app/src/widgets/bottom_nav_bar.dart';
-import 'package:diabetes_app/src/widgets/recordings_card.dart';
-import 'package:diabetes_app/src/widgets/search_bar.dart';
+import 'package:diabetes_assistant/src/screens/recordings_questionnaire.dart';
+import 'package:diabetes_assistant/src/widgets/bottom_nav_bar.dart';
+import 'package:diabetes_assistant/src/widgets/recordings_card.dart';
+import 'package:diabetes_assistant/src/widgets/search_bar.dart';
 import 'package:flutter/material.dart';
 
 import '../../constants.dart';
@@ -11,7 +11,7 @@ class RecordingsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var size = MediaQuery.of(context)
-        .size; // This is going to gie me the total height and width of my device
+        .size; // This is going to give me the total height and width of my device
     return Scaffold(
       bottomNavigationBar: BottomNavBar(),
       body: Stack(
@@ -75,12 +75,30 @@ class RecordingsScreen extends StatelessWidget {
                                 context,
                                 MaterialPageRoute(
                                     builder: (context) =>
-                                        RecordingsQuestionnaire()));
+                                        RecordingsQuestionnaire(
+                                          qnsText:
+                                              "What is your fasting blood sugar?",
+                                          save: () {
+                                            Navigator.pop(context);
+                                          },
+                                        )));
                           },
                         ),
                         RecordingsCard(
                           recordingName: "Random Blood Sugar",
-                          press: () {},
+                          press: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) =>
+                                        RecordingsQuestionnaire(
+                                          qnsText:
+                                              "What is your random blood sugar?",
+                                          save: () {
+                                            Navigator.pop(context);
+                                          },
+                                        )));
+                          },
                         ),
                       ],
                     ),

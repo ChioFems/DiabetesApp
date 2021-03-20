@@ -1,6 +1,6 @@
-import 'package:diabetes_app/src/widgets/bottom_nav_bar.dart';
-import 'package:diabetes_app/src/widgets/education_card.dart';
-import 'package:diabetes_app/src/widgets/search_bar.dart';
+import 'package:diabetes_assistant/src/widgets/bottom_nav_bar.dart';
+import 'package:diabetes_assistant/src/widgets/education_card.dart';
+import 'package:diabetes_assistant/src/widgets/search_bar.dart';
 import 'package:flutter/material.dart';
 
 import '../../constants.dart';

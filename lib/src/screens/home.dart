@@ -1,8 +1,11 @@
-import 'package:diabetes_app/src/screens/education.dart';
-import 'package:diabetes_app/src/screens/recordings.dart';
-import 'package:diabetes_app/src/widgets/bottom_nav_bar.dart';
-import 'package:diabetes_app/src/widgets/category_card.dart';
-import 'package:diabetes_app/src/widgets/search_bar.dart';
+import 'package:diabetes_assistant/src/screens/education.dart';
+import 'package:diabetes_assistant/src/screens/lifestyle.dart';
+import 'package:diabetes_assistant/src/screens/medication.dart';
+import 'package:diabetes_assistant/src/screens/recordings.dart';
+import 'package:diabetes_assistant/src/widgets/bottom_nav_bar.dart';
+import 'package:diabetes_assistant/src/widgets/category_card.dart';
+import 'package:diabetes_assistant/src/widgets/curved_bottom_nav_bar.dart';
+import 'package:diabetes_assistant/src/widgets/search_bar.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -83,7 +86,12 @@ class HomeScreen extends StatelessWidget {
                         CategoryCard(
                           title: "Life Style Data",
                           imgSrc: "assets/icons/lifestyles.png",
-                          press: () {},
+                          press: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => LifestyleScreen()));
+                          },
                         ),
                         CategoryCard(
                           title: "Education",
@@ -98,7 +106,12 @@ class HomeScreen extends StatelessWidget {
                         CategoryCard(
                           title: "Medication",
                           imgSrc: "assets/icons/medication.png",
-                          press: () {},
+                          press: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => MedicationScreen()));
+                          },
                         ),
                       ],
                     ),

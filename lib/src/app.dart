@@ -1,5 +1,5 @@
-import 'package:diabetes_app/constants.dart';
-import 'package:diabetes_app/src/screens/home.dart';
+import 'package:diabetes_assistant/constants.dart';
+import 'package:diabetes_assistant/src/screens/home.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 

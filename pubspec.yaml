@@ -1,4 +1,4 @@
-name: diabetes_app
+name: diabetes_assistant
 description: A new Flutter project.
 
 # The following line prevents the package from being accidentally published to
@@ -29,6 +29,7 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^0.1.3
   flutter_svg: ^0.17.4
+  curved_navigation_bar: ^0.3.3
 
 dev_dependencies:
   flutter_test:
@@ -56,7 +57,9 @@ flutter:
    - assets/icons/self_recordings.png
    - assets/icons/recordings_clear.png
    - assets/icons/lifestyles.png
+   - assets/icons/lifestyles_clear.png
    - assets/icons/medication.png
+   - assets/icons/medication_clear.png
    - assets/icons/education.png
    - assets/icons/education_clear1.png
    - assets/icons/home.png
