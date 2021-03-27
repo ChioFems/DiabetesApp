@@ -1,9 +1,9 @@
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:diabetes_assistant/constants.dart';
-import 'package:diabetes_assistant/src/screens/education.dart';
-import 'package:diabetes_assistant/src/screens/home.dart';
-import 'package:diabetes_assistant/src/screens/lifestyle.dart';
-import 'package:diabetes_assistant/src/screens/medication.dart';
+import 'package:diabetes_assistant/src/screens/Education.dart';
+import 'package:diabetes_assistant/src/screens/Home.dart';
+import 'package:diabetes_assistant/src/screens/Lifestyle.dart';
+import 'package:diabetes_assistant/src/screens/Medication.dart';
 import 'package:diabetes_assistant/src/screens/recordings.dart';
 import 'package:flutter/material.dart';
 

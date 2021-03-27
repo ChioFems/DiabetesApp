@@ -1,10 +1,5 @@
-import 'package:diabetes_assistant/src/screens/education.dart';
-import 'package:diabetes_assistant/src/screens/lifestyle.dart';
-import 'package:diabetes_assistant/src/screens/medication.dart';
-import 'package:diabetes_assistant/src/screens/recordings.dart';
 import 'package:diabetes_assistant/src/widgets/bottom_nav_bar.dart';
 import 'package:diabetes_assistant/src/widgets/category_card.dart';
-import 'package:diabetes_assistant/src/widgets/curved_bottom_nav_bar.dart';
 import 'package:diabetes_assistant/src/widgets/search_bar.dart';
 import 'package:flutter/material.dart';
 
@@ -77,40 +72,27 @@ class HomeScreen extends StatelessWidget {
                           title: "Self Recordings",
                           imgSrc: "assets/icons/self_recordings.png",
                           press: () {
-                            Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                    builder: (context) => RecordingsScreen()));
+                            Navigator.of(context).pushNamed('/recordings');
                           },
                         ),
                         CategoryCard(
-                          title: "Life Style Data",
-                          imgSrc: "assets/icons/lifestyles.png",
-                          press: () {
-                            Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                    builder: (context) => LifestyleScreen()));
-                          },
-                        ),
+                            title: "Life Style Data",
+                            imgSrc: "assets/icons/lifestyles.png",
+                            press: () {
+                              Navigator.of(context).pushNamed('/lifestyle');
+                            }),
                         CategoryCard(
                           title: "Education",
                           imgSrc: "assets/icons/education.png",
                           press: () {
-                            Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                    builder: (context) => EducationScreen()));
+                            Navigator.of(context).pushNamed('/education');
                           },
                         ),
                         CategoryCard(
                           title: "Medication",
                           imgSrc: "assets/icons/medication.png",
                           press: () {
-                            Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                    builder: (context) => MedicationScreen()));
+                            Navigator.of(context).pushNamed('/medication');
                           },
                         ),
                       ],

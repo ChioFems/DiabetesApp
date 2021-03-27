@@ -1,5 +1,5 @@
-import 'package:diabetes_assistant/src/screens/lifestyles_meals.dart';
-import 'package:diabetes_assistant/src/screens/lifestyles_physical.dart';
+import 'LifestyleMeals.dart';
+import 'LifestylePhysicalActivity.dart';
 import 'package:diabetes_assistant/src/widgets/bottom_nav_bar.dart';
 import 'package:diabetes_assistant/src/widgets/lifestyles_card.dart';
 import 'package:diabetes_assistant/src/widgets/search_bar.dart';

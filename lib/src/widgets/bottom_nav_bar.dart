@@ -1,6 +1,6 @@
 import 'package:diabetes_assistant/constants.dart';
-import 'package:diabetes_assistant/src/screens/home.dart';
-import 'package:diabetes_assistant/src/screens/lifestyle.dart';
+import 'package:diabetes_assistant/src/screens/Home.dart';
+import 'package:diabetes_assistant/src/screens/Lifestyle.dart';
 import 'package:diabetes_assistant/src/screens/recordings.dart';
 import 'package:flutter/material.dart';
 

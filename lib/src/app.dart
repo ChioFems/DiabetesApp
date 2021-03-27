@@ -1,5 +1,12 @@
 import 'package:diabetes_assistant/constants.dart';
-import 'package:diabetes_assistant/src/screens/home.dart';
+import 'package:diabetes_assistant/src/screens/Home.dart';
+import 'package:diabetes_assistant/src/screens/Education.dart';
+import 'package:diabetes_assistant/src/screens/RecordingsQuestionnaire.dart';
+import 'package:diabetes_assistant/src/screens/LifestyleMeals.dart';
+import 'package:diabetes_assistant/src/screens/Medication.dart';
+import 'package:diabetes_assistant/src/screens/LifestylePhysicalActivity.dart';
+import 'package:diabetes_assistant/src/screens/Lifestyle.dart';
+import 'package:diabetes_assistant/src/screens/recordings.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -14,7 +21,20 @@ class MyApp extends StatelessWidget {
     ]);
 
     return MaterialApp(
-      title: 'Diabetes App',
+      title: 'DiabAssistant',
+      initialRoute: '/home',
+      routes: <String, WidgetBuilder>{
+        '/home': (BuildContext context) => new HomeScreen(),
+        '/education': (BuildContext context) => new EducationScreen(),
+        '/recordings-questionnaires': (BuildContext context) =>
+            new RecordingsQuestionnaire(),
+        '/recordings': (BuildContext context) => new RecordingsScreen(),
+        '/medication': (BuildContext context) => new MedicationScreen(),
+        '/lifestyle': (BuildContext context) => new LifestyleScreen(),
+        '/lifestyle-meals': (BuildContext context) => new LifestylesMeals(),
+        '/lifestyle-physical-activity': (BuildContext context) =>
+            new LifestylesPhysical(),
+      },
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         // This is the theme of your application.
@@ -23,7 +43,6 @@ class MyApp extends StatelessWidget {
         visualDensity: VisualDensity.adaptivePlatformDensity,
         textTheme: Theme.of(context).textTheme.apply(displayColor: kTextColor),
       ),
-      home: HomeScreen(),
     );
   }
 }

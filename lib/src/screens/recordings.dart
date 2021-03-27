@@ -1,4 +1,4 @@
-import 'package:diabetes_assistant/src/screens/recordings_questionnaire.dart';
+import 'package:diabetes_assistant/src/screens/RecordingsQuestionnaire.dart';
 import 'package:diabetes_assistant/src/widgets/bottom_nav_bar.dart';
 import 'package:diabetes_assistant/src/widgets/recordings_card.dart';
 import 'package:diabetes_assistant/src/widgets/search_bar.dart';
