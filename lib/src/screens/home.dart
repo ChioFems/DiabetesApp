@@ -1,10 +1,6 @@
-import 'package:curved_navigation_bar/curved_navigation_bar.dart';
-import 'package:diabetes_assistant/constants.dart';
 import 'package:diabetes_assistant/src/screens/self_assessment.dart';
 import 'package:diabetes_assistant/src/screens/education.dart';
-import 'package:diabetes_assistant/src/screens/lifestyle.dart';
 import 'package:diabetes_assistant/src/screens/medication.dart';
-import 'package:diabetes_assistant/src/screens/recordings.dart';
 import 'package:diabetes_assistant/src/widgets/category_card.dart';
 import 'package:diabetes_assistant/src/widgets/search_bar.dart';
 import 'package:flutter/material.dart';
@@ -84,7 +80,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       children: <Widget>[
                         CategoryCard(
                           title: "Self Assessment",
-                          imgSrc: "assets/icons/recordings_menu.png",
+                          imgSrc: "assets/icons/assessment_menu.png",
                           press: () {
                             Navigator.push(
                                 context,
@@ -92,26 +88,6 @@ class _HomeScreenState extends State<HomeScreen> {
                                     builder: (context) => AssessmentScreen()));
                           },
                         ),
-                        /* CategoryCard(
-                          title: "Self Recordings",
-                          imgSrc: "assets/icons/recordings_menu.png",
-                          press: () {
-                            Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                    builder: (context) => RecordingsScreen()));
-                          },
-                        ),
-                        CategoryCard(
-                          title: "Life Style Data",
-                          imgSrc: "assets/icons/lifestyle_menu.png",
-                          press: () {
-                            Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                    builder: (context) => LifestyleScreen()));
-                          },
-                        ),*/
                         CategoryCard(
                           title: "Education",
                           imgSrc: "assets/icons/education_menu.png",

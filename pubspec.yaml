@@ -49,21 +49,20 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
+   - assets/icons/assessment_menu.png
+   - assets/icons/assessment_nav.png
+   - assets/icons/assessment_page.png
    - assets/icons/education_menu.png
+   - assets/icons/education_nav.png 
    - assets/icons/education_page.png 
    - assets/icons/home_nav.png
-   - assets/icons/lifestyle_menu.png
-   - assets/icons/lifestyle_nav.png
-   - assets/icons/lifestyle_page.png
    - assets/icons/logo.png
    - assets/icons/medication_menu.png
+   - assets/icons/medication_nav.png
    - assets/icons/medication_page.png
    - assets/icons/menu.png
-   - assets/icons/share.png
-   - assets/icons/my_records_nav.png
-   - assets/icons/recordings_menu.png
-   - assets/icons/recordings_page.png
    - assets/icons/search.png
+   - assets/icons/share.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

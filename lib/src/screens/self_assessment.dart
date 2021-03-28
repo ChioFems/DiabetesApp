@@ -1,6 +1,4 @@
-import 'package:diabetes_assistant/src/screens/recordings_questionnaire.dart';
 import 'package:diabetes_assistant/src/widgets/blood_sugar_assessment_card.dart';
-import 'package:diabetes_assistant/src/widgets/recordings_card.dart';
 import 'package:diabetes_assistant/src/widgets/search_bar.dart';
 import 'package:flutter/material.dart';
 
@@ -22,7 +20,7 @@ class AssessmentScreen extends StatelessWidget {
             decoration: BoxDecoration(
               color: kRecordingsLightColor,
               image: DecorationImage(
-                image: AssetImage("assets/icons/recordings_page.png"),
+                image: AssetImage("assets/icons/assessment_page.png"),
                 fit: BoxFit.fitWidth,
               ),
             ),
