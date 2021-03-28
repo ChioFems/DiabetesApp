@@ -1,21 +1,30 @@
+import 'package:curved_navigation_bar/curved_navigation_bar.dart';
+import 'package:diabetes_assistant/constants.dart';
+import 'package:diabetes_assistant/src/screens/self_assessment.dart';
 import 'package:diabetes_assistant/src/screens/education.dart';
 import 'package:diabetes_assistant/src/screens/lifestyle.dart';
 import 'package:diabetes_assistant/src/screens/medication.dart';
 import 'package:diabetes_assistant/src/screens/recordings.dart';
-import 'package:diabetes_assistant/src/widgets/bottom_nav_bar.dart';
 import 'package:diabetes_assistant/src/widgets/category_card.dart';
-import 'package:diabetes_assistant/src/widgets/curved_bottom_nav_bar.dart';
 import 'package:diabetes_assistant/src/widgets/search_bar.dart';
 import 'package:flutter/material.dart';
 
-class HomeScreen extends StatelessWidget {
+class HomeScreen extends StatefulWidget {
   // This widget is the root of your application.
+
+  @override
+  _HomeScreenState createState() => _HomeScreenState();
+}
+
+class _HomeScreenState extends State<HomeScreen> {
+  int _page = 0;
+
   @override
   Widget build(BuildContext context) {
     var size = MediaQuery.of(context)
         .size; // This is going to gie me the total height and width of my device
     return Scaffold(
-      bottomNavigationBar: BottomNavBar(),
+      //bottomNavigationBar: CurvedNavBar(page: 1),
       body: Stack(
         children: <Widget>[
           Container(
@@ -36,7 +45,7 @@ class HomeScreen extends StatelessWidget {
               child: Column(
                 children: <Widget>[
                   Align(
-                    alignment: Alignment.topLeft,
+                    alignment: Alignment.topRight,
                     child: Container(
                       alignment: Alignment.center,
                       height: 45,
@@ -46,7 +55,7 @@ class HomeScreen extends StatelessWidget {
                         shape: BoxShape.circle,
                       ),
                       // child: SvgPicture.asset("assets/icons/menu.svg"),
-                      child: Image.asset("assets/icons/menu.png"),
+                      child: Image.asset("assets/icons/share.png"),
                     ),
                   ),
                   Container(
@@ -74,6 +83,16 @@ class HomeScreen extends StatelessWidget {
                       mainAxisSpacing: 20,
                       children: <Widget>[
                         CategoryCard(
+                          title: "Self Assessment",
+                          imgSrc: "assets/icons/recordings_menu.png",
+                          press: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => AssessmentScreen()));
+                          },
+                        ),
+                        /* CategoryCard(
                           title: "Self Recordings",
                           imgSrc: "assets/icons/recordings_menu.png",
                           press: () {
@@ -92,7 +111,7 @@ class HomeScreen extends StatelessWidget {
                                 MaterialPageRoute(
                                     builder: (context) => LifestyleScreen()));
                           },
-                        ),
+                        ),*/
                         CategoryCard(
                           title: "Education",
                           imgSrc: "assets/icons/education_menu.png",

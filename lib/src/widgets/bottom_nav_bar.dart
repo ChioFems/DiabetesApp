@@ -1,86 +1,62 @@
+import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:diabetes_assistant/constants.dart';
+import 'package:diabetes_assistant/src/screens/self_assessment.dart';
+import 'package:diabetes_assistant/src/screens/education.dart';
 import 'package:diabetes_assistant/src/screens/home.dart';
 import 'package:diabetes_assistant/src/screens/lifestyle.dart';
+import 'package:diabetes_assistant/src/screens/medication.dart';
 import 'package:diabetes_assistant/src/screens/recordings.dart';
 import 'package:flutter/material.dart';
 
-class BottomNavBar extends StatelessWidget {
-  const BottomNavBar({
-    Key key,
-  }) : super(key: key);
+class BottomNavBar extends StatefulWidget {
+  BottomNavBar();
 
   @override
-  Widget build(BuildContext context) {
-    return Container(
-      padding: EdgeInsets.symmetric(horizontal: 40, vertical: 10),
-      height: 80,
-      color: Colors.white,
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: <Widget>[
-          BottomNavItem(
-            title: "Home",
-            imgSrc: "assets/icons/home_nav.png",
-            isActive: true,
-            press: () {
-              Navigator.pushReplacement(context,
-                  MaterialPageRoute(builder: (context) => HomeScreen()));
-            },
-          ),
-          BottomNavItem(
-            title: "Life Style",
-            imgSrc: "assets/icons/lifestyle_nav.png",
-            isActive: false,
-            press: () {
-              Navigator.pushReplacement(context,
-                  MaterialPageRoute(builder: (context) => LifestyleScreen()));
-            },
-          ),
-          BottomNavItem(
-            title: "My Records",
-            imgSrc: "assets/icons/my_records_nav.png",
-            isActive: false,
-            press: () {
-              Navigator.pushReplacement(context,
-                  MaterialPageRoute(builder: (context) => RecordingsScreen()));
-            },
-          ),
-        ],
-      ),
-    );
-  }
+  _BottomNavBarState createState() => _BottomNavBarState();
 }
 
-class BottomNavItem extends StatelessWidget {
-  final String imgSrc;
-  final String title;
-  final Function press;
-  final bool isActive;
-  const BottomNavItem({
-    Key key,
-    this.imgSrc,
-    this.title,
-    this.press,
-    this.isActive,
-  }) : super(key: key);
+class _BottomNavBarState extends State<BottomNavBar> {
+  _BottomNavBarState();
+  int _page = 0;
+  final _pageOption = [
+    HomeScreen(),
+    AssessmentScreen(),
+    EducationScreen(),
+    MedicationScreen(),
+    RecordingsScreen(),
+    LifestyleScreen(),
+  ];
 
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: press,
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceAround,
-        children: <Widget>[
-          Image(
-              image: AssetImage(imgSrc),
-              width: 40,
-              color: isActive ? kActiveIconColor : kTextColor),
-          Text(
-            title,
-            style: TextStyle(color: isActive ? kActiveIconColor : kTextColor),
-          ),
+    return Scaffold(
+      // resizeToAvoidBottomPadding: false,
+      bottomNavigationBar: CurvedNavigationBar(
+        index: 0,
+        items: <Widget>[
+          Icon(Icons.dashboard,
+              size: 20, color: Theme.of(context).scaffoldBackgroundColor),
+          Icon(Icons.mode_edit,
+              size: 20, color: Theme.of(context).scaffoldBackgroundColor),
+          Icon(Icons.party_mode,
+              size: 20, color: Theme.of(context).scaffoldBackgroundColor),
+          Icon(Icons.person_outline,
+              size: 20, color: Theme.of(context).scaffoldBackgroundColor),
         ],
+        height: 65,
+        color: kActiveIconColor,
+        backgroundColor: Theme.of(context).scaffoldBackgroundColor,
+        buttonBackgroundColor: kHomeColor,
+        animationDuration: Duration(milliseconds: 250),
+        animationCurve: Curves.bounceInOut,
+        onTap: (index) {
+          // debugPrint("Current index is: $index");
+          setState(() {
+            _page = index;
+          });
+        },
       ),
+      body: _pageOption[_page],
     );
   }
 }

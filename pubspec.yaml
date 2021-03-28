@@ -29,6 +29,7 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^0.1.3
   flutter_svg: ^0.17.4
+  http: ^0.12.0
   curved_navigation_bar: ^0.3.3
 
 dev_dependencies:
@@ -58,6 +59,7 @@ flutter:
    - assets/icons/medication_menu.png
    - assets/icons/medication_page.png
    - assets/icons/menu.png
+   - assets/icons/share.png
    - assets/icons/my_records_nav.png
    - assets/icons/recordings_menu.png
    - assets/icons/recordings_page.png

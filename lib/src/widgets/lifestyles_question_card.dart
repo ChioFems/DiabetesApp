@@ -15,7 +15,7 @@ class LifestylesQuestionCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 145,
+      height: 140,
       padding: EdgeInsets.all(20),
       decoration: BoxDecoration(
         color: kBackgroundColor,

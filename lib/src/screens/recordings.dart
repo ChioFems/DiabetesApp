@@ -13,7 +13,7 @@ class RecordingsScreen extends StatelessWidget {
     var size = MediaQuery.of(context)
         .size; // This is going to give me the total height and width of my device
     return Scaffold(
-      bottomNavigationBar: BottomNavBar(),
+      // bottomNavigationBar: BottomNavBar(),
       body: Stack(
         children: <Widget>[
           Container(
