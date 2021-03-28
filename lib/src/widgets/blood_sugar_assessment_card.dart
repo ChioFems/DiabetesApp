@@ -154,8 +154,6 @@ class _BloodSugarAssessmentCardState extends State<BloodSugarAssessmentCard> {
                   ),
                 ),
                 SizedBox(height: size.height * .035),
-                //new Text(_fastingController.text),
-                //new Text(_postBreakfastController.text),
                 Text(
                   "3. What is your post lunch blood sugar?",
                   textAlign: TextAlign.center,
@@ -243,6 +241,10 @@ class _BloodSugarAssessmentCardState extends State<BloodSugarAssessmentCard> {
                     ],
                   ),
                 ),
+                /*new Text(_fastingController.text),
+                new Text(_postBreakfastController.text),
+                new Text(_postLunchController.text),
+                new Text(_bedtimeController.text),*/
                 Container(
                   height: size.height * .10,
                 ),

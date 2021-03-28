@@ -1,7 +1,6 @@
 import 'package:diabetes_assistant/src/data/rest_data_service.dart';
 import 'package:diabetes_assistant/src/presenters/self_assessment_card.dart';
 import 'package:diabetes_assistant/src/screens/self_assessment.dart';
-import 'package:diabetes_assistant/src/widgets/bottom_nav_bar.dart';
 import 'package:diabetes_assistant/src/widgets/lifestyles_question_card.dart';
 import 'package:flutter/material.dart';
 
@@ -126,9 +125,28 @@ class _EmotionsAssessmentCardState extends State<EmotionsAssessmentCard> {
                               context,
                               MaterialPageRoute(
                                   builder: (context) => EmotionsAssessmentCard(
-                                        runningExercise: widget.runningExercise,
-                                        fastingSugar: widget.fastingSugar,
                                         happyEmotion: "Happy",
+                                        coolEmotion: widget.coolEmotion,
+                                        sadEmotion: widget.sadEmotion,
+                                        angryEmotion: widget.angryEmotion,
+                                        fastingSugar: widget.fastingSugar,
+                                        postBreakfast: widget.postBreakfast,
+                                        postLunch: widget.postLunch,
+                                        bedtimeSugar: widget.bedtimeSugar,
+                                        starchsMeal: widget.starchsMeal,
+                                        vegetablesMeal: widget.vegetablesMeal,
+                                        diaryMeal: widget.diaryMeal,
+                                        fatsMeal: widget.fatsMeal,
+                                        proteinMeal: widget.proteinMeal,
+                                        runningExercise: widget.runningExercise,
+                                        swimmingExercise:
+                                            widget.swimmingExercise,
+                                        cyclingExercise: widget.cyclingExercise,
+                                        walkingExercise: widget.walkingExercise,
+                                        acrobaticsExercise:
+                                            widget.acrobaticsExercise,
+                                        gymnasticsExercise:
+                                            widget.gymnasticsExercise,
                                       )));
                         },
                       ),
@@ -140,18 +158,33 @@ class _EmotionsAssessmentCardState extends State<EmotionsAssessmentCard> {
                               context,
                               MaterialPageRoute(
                                   builder: (context) => EmotionsAssessmentCard(
-                                        runningExercise: widget.runningExercise,
-                                        fastingSugar: widget.fastingSugar,
                                         coolEmotion: "Cool",
+                                        happyEmotion: widget.happyEmotion,
+                                        sadEmotion: widget.sadEmotion,
+                                        angryEmotion: widget.angryEmotion,
+                                        fastingSugar: widget.fastingSugar,
+                                        postBreakfast: widget.postBreakfast,
+                                        postLunch: widget.postLunch,
+                                        bedtimeSugar: widget.bedtimeSugar,
+                                        starchsMeal: widget.starchsMeal,
+                                        vegetablesMeal: widget.vegetablesMeal,
+                                        diaryMeal: widget.diaryMeal,
+                                        fatsMeal: widget.fatsMeal,
+                                        proteinMeal: widget.proteinMeal,
+                                        runningExercise: widget.runningExercise,
+                                        swimmingExercise:
+                                            widget.swimmingExercise,
+                                        cyclingExercise: widget.cyclingExercise,
+                                        walkingExercise: widget.walkingExercise,
+                                        acrobaticsExercise:
+                                            widget.acrobaticsExercise,
+                                        gymnasticsExercise:
+                                            widget.gymnasticsExercise,
                                       )));
                         },
                       ),
                     ],
                   ),
-                  new Text("${widget.fastingSugar}"),
-                  new Text("${widget.starchsMeal}"),
-                  new Text("${widget.runningExercise}"),
-                  new Text("${widget.coolEmotion}"),
                   SizedBox(height: size.height * .02),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -164,9 +197,28 @@ class _EmotionsAssessmentCardState extends State<EmotionsAssessmentCard> {
                               context,
                               MaterialPageRoute(
                                   builder: (context) => EmotionsAssessmentCard(
-                                        runningExercise: widget.runningExercise,
-                                        fastingSugar: widget.fastingSugar,
                                         sadEmotion: "Sad",
+                                        coolEmotion: widget.coolEmotion,
+                                        happyEmotion: widget.happyEmotion,
+                                        angryEmotion: widget.angryEmotion,
+                                        fastingSugar: widget.fastingSugar,
+                                        postBreakfast: widget.postBreakfast,
+                                        postLunch: widget.postLunch,
+                                        bedtimeSugar: widget.bedtimeSugar,
+                                        starchsMeal: widget.starchsMeal,
+                                        vegetablesMeal: widget.vegetablesMeal,
+                                        diaryMeal: widget.diaryMeal,
+                                        fatsMeal: widget.fatsMeal,
+                                        proteinMeal: widget.proteinMeal,
+                                        runningExercise: widget.runningExercise,
+                                        swimmingExercise:
+                                            widget.swimmingExercise,
+                                        cyclingExercise: widget.cyclingExercise,
+                                        walkingExercise: widget.walkingExercise,
+                                        acrobaticsExercise:
+                                            widget.acrobaticsExercise,
+                                        gymnasticsExercise:
+                                            widget.gymnasticsExercise,
                                       )));
                         },
                       ),
@@ -178,14 +230,52 @@ class _EmotionsAssessmentCardState extends State<EmotionsAssessmentCard> {
                               context,
                               MaterialPageRoute(
                                   builder: (context) => EmotionsAssessmentCard(
-                                        runningExercise: widget.runningExercise,
-                                        fastingSugar: widget.fastingSugar,
                                         angryEmotion: "Angry",
+                                        coolEmotion: widget.coolEmotion,
+                                        sadEmotion: widget.sadEmotion,
+                                        happyEmotion: widget.happyEmotion,
+                                        fastingSugar: widget.fastingSugar,
+                                        postBreakfast: widget.postBreakfast,
+                                        postLunch: widget.postLunch,
+                                        bedtimeSugar: widget.bedtimeSugar,
+                                        starchsMeal: widget.starchsMeal,
+                                        vegetablesMeal: widget.vegetablesMeal,
+                                        diaryMeal: widget.diaryMeal,
+                                        fatsMeal: widget.fatsMeal,
+                                        proteinMeal: widget.proteinMeal,
+                                        runningExercise: widget.runningExercise,
+                                        swimmingExercise:
+                                            widget.swimmingExercise,
+                                        cyclingExercise: widget.cyclingExercise,
+                                        walkingExercise: widget.walkingExercise,
+                                        acrobaticsExercise:
+                                            widget.acrobaticsExercise,
+                                        gymnasticsExercise:
+                                            widget.gymnasticsExercise,
                                       )));
                         },
                       ),
                     ],
                   ),
+                  /* new Text("${widget.fastingSugar}"),
+                  new Text("${widget.postBreakfast}"),
+                  new Text("${widget.postLunch}"),
+                  new Text("${widget.bedtimeSugar}"),
+                  new Text("${widget.starchsMeal}"),
+                  new Text("${widget.vegetablesMeal}"),
+                  new Text("${widget.diaryMeal}"),
+                  new Text("${widget.fatsMeal}"),
+                  new Text("${widget.proteinMeal}"),
+                  new Text("${widget.runningExercise}"),
+                  new Text("${widget.swimmingExercise}"),
+                  new Text("${widget.cyclingExercise}"),
+                  new Text("${widget.walkingExercise}"),
+                  new Text("${widget.acrobaticsExercise}"),
+                  new Text("${widget.gymnasticsExercise}"),
+                  new Text("${widget.happyEmotion}"),
+                  new Text("${widget.coolEmotion}"),
+                  new Text("${widget.sadEmotion}"),
+                  new Text("${widget.angryEmotion}"),*/
                   SizedBox(height: size.height * .20),
                   Column(
                     children: <Widget>[

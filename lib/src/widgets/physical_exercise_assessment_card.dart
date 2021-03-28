@@ -94,6 +94,23 @@ class _PhysicalExerciseAssessmentCardState
                                 PhysicalExerciseAssessmentCard(
                                   runningExercise:
                                       _runningExerciseController.text,
+                                  fastingSugar: "${widget.fastingSugar}",
+                                  postBreakfast: "${widget.postBreakfast}",
+                                  postLunch: "${widget.postLunch}",
+                                  bedtimeSugar: "${widget.bedtimeSugar}",
+                                  starchsMeal: "${widget.starchsMeal}",
+                                  vegetablesMeal: "${widget.vegetablesMeal}",
+                                  diaryMeal: "${widget.diaryMeal}",
+                                  fatsMeal: "${widget.fatsMeal}",
+                                  proteinMeal: "${widget.proteinMeal}",
+                                  swimmingExercise:
+                                      "${widget.swimmingExercise}",
+                                  cyclingExercise: "${widget.cyclingExercise}",
+                                  walkingExercise: "${widget.walkingExercise}",
+                                  acrobaticsExercise:
+                                      "${widget.acrobaticsExercise}",
+                                  gymnasticsExercise:
+                                      "${widget.gymnasticsExercise}",
                                 )));
                   },
                   child: Container(
@@ -160,6 +177,22 @@ class _PhysicalExerciseAssessmentCardState
                                 PhysicalExerciseAssessmentCard(
                                   swimmingExercise:
                                       _swimmingExerciseController.text,
+                                  fastingSugar: "${widget.fastingSugar}",
+                                  postBreakfast: "${widget.postBreakfast}",
+                                  postLunch: "${widget.postLunch}",
+                                  bedtimeSugar: "${widget.bedtimeSugar}",
+                                  starchsMeal: "${widget.starchsMeal}",
+                                  vegetablesMeal: "${widget.vegetablesMeal}",
+                                  diaryMeal: "${widget.diaryMeal}",
+                                  fatsMeal: "${widget.fatsMeal}",
+                                  proteinMeal: "${widget.proteinMeal}",
+                                  runningExercise: "${widget.runningExercise}",
+                                  cyclingExercise: "${widget.cyclingExercise}",
+                                  walkingExercise: "${widget.walkingExercise}",
+                                  acrobaticsExercise:
+                                      "${widget.acrobaticsExercise}",
+                                  gymnasticsExercise:
+                                      "${widget.gymnasticsExercise}",
                                 )));
                   },
                   child: Container(
@@ -226,6 +259,23 @@ class _PhysicalExerciseAssessmentCardState
                                 PhysicalExerciseAssessmentCard(
                                   cyclingExercise:
                                       _cyclingExerciseController.text,
+                                  fastingSugar: "${widget.fastingSugar}",
+                                  postBreakfast: "${widget.postBreakfast}",
+                                  postLunch: "${widget.postLunch}",
+                                  bedtimeSugar: "${widget.bedtimeSugar}",
+                                  starchsMeal: "${widget.starchsMeal}",
+                                  vegetablesMeal: "${widget.vegetablesMeal}",
+                                  diaryMeal: "${widget.diaryMeal}",
+                                  fatsMeal: "${widget.fatsMeal}",
+                                  proteinMeal: "${widget.proteinMeal}",
+                                  runningExercise: "${widget.runningExercise}",
+                                  swimmingExercise:
+                                      "${widget.swimmingExercise}",
+                                  walkingExercise: "${widget.walkingExercise}",
+                                  acrobaticsExercise:
+                                      "${widget.acrobaticsExercise}",
+                                  gymnasticsExercise:
+                                      "${widget.gymnasticsExercise}",
                                 )));
                   },
                   child: Container(
@@ -292,6 +342,23 @@ class _PhysicalExerciseAssessmentCardState
                                 PhysicalExerciseAssessmentCard(
                                   walkingExercise:
                                       _walkingExerciseController.text,
+                                  fastingSugar: "${widget.fastingSugar}",
+                                  postBreakfast: "${widget.postBreakfast}",
+                                  postLunch: "${widget.postLunch}",
+                                  bedtimeSugar: "${widget.bedtimeSugar}",
+                                  starchsMeal: "${widget.starchsMeal}",
+                                  vegetablesMeal: "${widget.vegetablesMeal}",
+                                  diaryMeal: "${widget.diaryMeal}",
+                                  fatsMeal: "${widget.fatsMeal}",
+                                  proteinMeal: "${widget.proteinMeal}",
+                                  runningExercise: "${widget.runningExercise}",
+                                  swimmingExercise:
+                                      "${widget.swimmingExercise}",
+                                  cyclingExercise: "${widget.cyclingExercise}",
+                                  acrobaticsExercise:
+                                      "${widget.acrobaticsExercise}",
+                                  gymnasticsExercise:
+                                      "${widget.gymnasticsExercise}",
                                 )));
                   },
                   child: Container(
@@ -358,6 +425,22 @@ class _PhysicalExerciseAssessmentCardState
                                 PhysicalExerciseAssessmentCard(
                                   acrobaticsExercise:
                                       _acrobaticsExerciseController.text,
+                                  fastingSugar: "${widget.fastingSugar}",
+                                  postBreakfast: "${widget.postBreakfast}",
+                                  postLunch: "${widget.postLunch}",
+                                  bedtimeSugar: "${widget.bedtimeSugar}",
+                                  starchsMeal: "${widget.starchsMeal}",
+                                  vegetablesMeal: "${widget.vegetablesMeal}",
+                                  diaryMeal: "${widget.diaryMeal}",
+                                  fatsMeal: "${widget.fatsMeal}",
+                                  proteinMeal: "${widget.proteinMeal}",
+                                  runningExercise: "${widget.runningExercise}",
+                                  swimmingExercise:
+                                      "${widget.swimmingExercise}",
+                                  cyclingExercise: "${widget.cyclingExercise}",
+                                  walkingExercise: "${widget.walkingExercise}",
+                                  gymnasticsExercise:
+                                      "${widget.gymnasticsExercise}",
                                 )));
                   },
                   child: Container(
@@ -424,6 +507,22 @@ class _PhysicalExerciseAssessmentCardState
                                 PhysicalExerciseAssessmentCard(
                                   gymnasticsExercise:
                                       _gymnasticsExerciseController.text,
+                                  fastingSugar: "${widget.fastingSugar}",
+                                  postBreakfast: "${widget.postBreakfast}",
+                                  postLunch: "${widget.postLunch}",
+                                  bedtimeSugar: "${widget.bedtimeSugar}",
+                                  starchsMeal: "${widget.starchsMeal}",
+                                  vegetablesMeal: "${widget.vegetablesMeal}",
+                                  diaryMeal: "${widget.diaryMeal}",
+                                  fatsMeal: "${widget.fatsMeal}",
+                                  proteinMeal: "${widget.proteinMeal}",
+                                  runningExercise: "${widget.runningExercise}",
+                                  swimmingExercise:
+                                      "${widget.swimmingExercise}",
+                                  cyclingExercise: "${widget.cyclingExercise}",
+                                  walkingExercise: "${widget.walkingExercise}",
+                                  acrobaticsExercise:
+                                      "${widget.acrobaticsExercise}",
                                 )));
                   },
                   child: Container(
@@ -522,10 +621,6 @@ class _PhysicalExerciseAssessmentCardState
                     ),
                   ],
                 ),
-                new Text("${widget.fastingSugar}"),
-                new Text("${widget.starchsMeal}"),
-                new Text("${widget.runningExercise}"),
-                new Text("${widget.swimmingExercise}"),
                 SizedBox(height: size.height * .02),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -566,6 +661,21 @@ class _PhysicalExerciseAssessmentCardState
                     ),
                   ],
                 ),
+                /* new Text("${widget.fastingSugar}"),
+                new Text("${widget.postBreakfast}"),
+                new Text("${widget.postLunch}"),
+                new Text("${widget.bedtimeSugar}"),
+                new Text("${widget.starchsMeal}"),
+                new Text("${widget.vegetablesMeal}"),
+                new Text("${widget.diaryMeal}"),
+                new Text("${widget.fatsMeal}"),
+                new Text("${widget.proteinMeal}"),
+                new Text("${widget.runningExercise}"),
+                new Text("${widget.swimmingExercise}"),
+                new Text("${widget.cyclingExercise}"),
+                new Text("${widget.walkingExercise}"),
+                new Text("${widget.acrobaticsExercise}"),
+                new Text("${widget.gymnasticsExercise}"),*/
                 SizedBox(height: size.height * .055),
                 Column(
                   children: <Widget>[

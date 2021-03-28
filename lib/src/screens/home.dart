@@ -46,10 +46,10 @@ class _HomeScreenState extends State<HomeScreen> {
                       alignment: Alignment.center,
                       height: 45,
                       width: 45,
-                      decoration: BoxDecoration(
+                      /* decoration: BoxDecoration(
                         color: Color(0xFF0EA394),
-                        shape: BoxShape.circle,
-                      ),
+                        shape: BoxShape.rectangle,
+                      ),*/
                       // child: SvgPicture.asset("assets/icons/menu.svg"),
                       child: Image.asset("assets/icons/share.png"),
                     ),
@@ -66,7 +66,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     style: Theme.of(context).textTheme.display1.copyWith(
                         fontWeight: FontWeight.w800,
                         fontSize: 22,
-                        color: Colors.white),
+                        color: Colors.black),
                   ),
                   SearchBar(
                     searchText: "What are you looking for?",

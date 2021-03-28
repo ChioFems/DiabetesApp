@@ -57,6 +57,15 @@ class _MealAssessmentCardState extends State<MealAssessmentCard> {
                             MaterialPageRoute(
                                 builder: (context) => MealAssessmentCard(
                                       starchsMeal: "Small",
+                                      fastingSugar: "${widget.fastingSugar}",
+                                      postBreakfast: "${widget.postBreakfast}",
+                                      postLunch: "${widget.postLunch}",
+                                      bedtimeSugar: "${widget.bedtimeSugar}",
+                                      vegetablesMeal:
+                                          "${widget.vegetablesMeal}",
+                                      diaryMeal: "${widget.diaryMeal}",
+                                      fatsMeal: "${widget.fatsMeal}",
+                                      proteinMeal: "${widget.proteinMeal}",
                                     )));
                       },
                     ),
@@ -82,6 +91,15 @@ class _MealAssessmentCardState extends State<MealAssessmentCard> {
                             MaterialPageRoute(
                                 builder: (context) => MealAssessmentCard(
                                       starchsMeal: "Medium",
+                                      fastingSugar: "${widget.fastingSugar}",
+                                      postBreakfast: "${widget.postBreakfast}",
+                                      postLunch: "${widget.postLunch}",
+                                      bedtimeSugar: "${widget.bedtimeSugar}",
+                                      vegetablesMeal:
+                                          "${widget.vegetablesMeal}",
+                                      diaryMeal: "${widget.diaryMeal}",
+                                      fatsMeal: "${widget.fatsMeal}",
+                                      proteinMeal: "${widget.proteinMeal}",
                                     )));
                       },
                     ),
@@ -107,6 +125,15 @@ class _MealAssessmentCardState extends State<MealAssessmentCard> {
                             MaterialPageRoute(
                                 builder: (context) => MealAssessmentCard(
                                       starchsMeal: "Large",
+                                      fastingSugar: "${widget.fastingSugar}",
+                                      postBreakfast: "${widget.postBreakfast}",
+                                      postLunch: "${widget.postLunch}",
+                                      bedtimeSugar: "${widget.bedtimeSugar}",
+                                      vegetablesMeal:
+                                          "${widget.vegetablesMeal}",
+                                      diaryMeal: "${widget.diaryMeal}",
+                                      fatsMeal: "${widget.fatsMeal}",
+                                      proteinMeal: "${widget.proteinMeal}",
                                     )));
                       },
                     ),
@@ -151,6 +178,14 @@ class _MealAssessmentCardState extends State<MealAssessmentCard> {
                             MaterialPageRoute(
                                 builder: (context) => MealAssessmentCard(
                                       vegetablesMeal: "Small",
+                                      fastingSugar: "${widget.fastingSugar}",
+                                      postBreakfast: "${widget.postBreakfast}",
+                                      postLunch: "${widget.postLunch}",
+                                      bedtimeSugar: "${widget.bedtimeSugar}",
+                                      starchsMeal: "${widget.starchsMeal}",
+                                      diaryMeal: "${widget.diaryMeal}",
+                                      fatsMeal: "${widget.fatsMeal}",
+                                      proteinMeal: "${widget.proteinMeal}",
                                     )));
                       },
                     ),
@@ -176,6 +211,14 @@ class _MealAssessmentCardState extends State<MealAssessmentCard> {
                             MaterialPageRoute(
                                 builder: (context) => MealAssessmentCard(
                                       vegetablesMeal: "Medium",
+                                      fastingSugar: "${widget.fastingSugar}",
+                                      postBreakfast: "${widget.postBreakfast}",
+                                      postLunch: "${widget.postLunch}",
+                                      bedtimeSugar: "${widget.bedtimeSugar}",
+                                      starchsMeal: "${widget.starchsMeal}",
+                                      diaryMeal: "${widget.diaryMeal}",
+                                      fatsMeal: "${widget.fatsMeal}",
+                                      proteinMeal: "${widget.proteinMeal}",
                                     )));
                       },
                     ),
@@ -201,6 +244,14 @@ class _MealAssessmentCardState extends State<MealAssessmentCard> {
                             MaterialPageRoute(
                                 builder: (context) => MealAssessmentCard(
                                       vegetablesMeal: "Large",
+                                      fastingSugar: "${widget.fastingSugar}",
+                                      postBreakfast: "${widget.postBreakfast}",
+                                      postLunch: "${widget.postLunch}",
+                                      bedtimeSugar: "${widget.bedtimeSugar}",
+                                      starchsMeal: "${widget.starchsMeal}",
+                                      diaryMeal: "${widget.diaryMeal}",
+                                      fatsMeal: "${widget.fatsMeal}",
+                                      proteinMeal: "${widget.proteinMeal}",
                                     )));
                       },
                     ),
@@ -245,6 +296,15 @@ class _MealAssessmentCardState extends State<MealAssessmentCard> {
                             MaterialPageRoute(
                                 builder: (context) => MealAssessmentCard(
                                       diaryMeal: "Small",
+                                      fastingSugar: "${widget.fastingSugar}",
+                                      postBreakfast: "${widget.postBreakfast}",
+                                      postLunch: "${widget.postLunch}",
+                                      bedtimeSugar: "${widget.bedtimeSugar}",
+                                      starchsMeal: "${widget.starchsMeal}",
+                                      vegetablesMeal:
+                                          "${widget.vegetablesMeal}",
+                                      fatsMeal: "${widget.fatsMeal}",
+                                      proteinMeal: "${widget.proteinMeal}",
                                     )));
                       },
                     ),
@@ -270,6 +330,15 @@ class _MealAssessmentCardState extends State<MealAssessmentCard> {
                             MaterialPageRoute(
                                 builder: (context) => MealAssessmentCard(
                                       diaryMeal: "Medium",
+                                      fastingSugar: "${widget.fastingSugar}",
+                                      postBreakfast: "${widget.postBreakfast}",
+                                      postLunch: "${widget.postLunch}",
+                                      bedtimeSugar: "${widget.bedtimeSugar}",
+                                      starchsMeal: "${widget.starchsMeal}",
+                                      vegetablesMeal:
+                                          "${widget.vegetablesMeal}",
+                                      fatsMeal: "${widget.fatsMeal}",
+                                      proteinMeal: "${widget.proteinMeal}",
                                     )));
                       },
                     ),
@@ -295,6 +364,15 @@ class _MealAssessmentCardState extends State<MealAssessmentCard> {
                             MaterialPageRoute(
                                 builder: (context) => MealAssessmentCard(
                                       diaryMeal: "Large",
+                                      fastingSugar: "${widget.fastingSugar}",
+                                      postBreakfast: "${widget.postBreakfast}",
+                                      postLunch: "${widget.postLunch}",
+                                      bedtimeSugar: "${widget.bedtimeSugar}",
+                                      starchsMeal: "${widget.starchsMeal}",
+                                      vegetablesMeal:
+                                          "${widget.vegetablesMeal}",
+                                      fatsMeal: "${widget.fatsMeal}",
+                                      proteinMeal: "${widget.proteinMeal}",
                                     )));
                       },
                     ),
@@ -339,6 +417,15 @@ class _MealAssessmentCardState extends State<MealAssessmentCard> {
                             MaterialPageRoute(
                                 builder: (context) => MealAssessmentCard(
                                       fatsMeal: "Small",
+                                      fastingSugar: "${widget.fastingSugar}",
+                                      postBreakfast: "${widget.postBreakfast}",
+                                      postLunch: "${widget.postLunch}",
+                                      bedtimeSugar: "${widget.bedtimeSugar}",
+                                      starchsMeal: "${widget.starchsMeal}",
+                                      vegetablesMeal:
+                                          "${widget.vegetablesMeal}",
+                                      diaryMeal: "${widget.diaryMeal}",
+                                      proteinMeal: "${widget.proteinMeal}",
                                     )));
                       },
                     ),
@@ -364,6 +451,15 @@ class _MealAssessmentCardState extends State<MealAssessmentCard> {
                             MaterialPageRoute(
                                 builder: (context) => MealAssessmentCard(
                                       fatsMeal: "Medium",
+                                      fastingSugar: "${widget.fastingSugar}",
+                                      postBreakfast: "${widget.postBreakfast}",
+                                      postLunch: "${widget.postLunch}",
+                                      bedtimeSugar: "${widget.bedtimeSugar}",
+                                      starchsMeal: "${widget.starchsMeal}",
+                                      vegetablesMeal:
+                                          "${widget.vegetablesMeal}",
+                                      diaryMeal: "${widget.diaryMeal}",
+                                      proteinMeal: "${widget.proteinMeal}",
                                     )));
                       },
                     ),
@@ -389,6 +485,15 @@ class _MealAssessmentCardState extends State<MealAssessmentCard> {
                             MaterialPageRoute(
                                 builder: (context) => MealAssessmentCard(
                                       fatsMeal: "Large",
+                                      fastingSugar: "${widget.fastingSugar}",
+                                      postBreakfast: "${widget.postBreakfast}",
+                                      postLunch: "${widget.postLunch}",
+                                      bedtimeSugar: "${widget.bedtimeSugar}",
+                                      starchsMeal: "${widget.starchsMeal}",
+                                      vegetablesMeal:
+                                          "${widget.vegetablesMeal}",
+                                      diaryMeal: "${widget.diaryMeal}",
+                                      proteinMeal: "${widget.proteinMeal}",
                                     )));
                       },
                     ),
@@ -433,6 +538,15 @@ class _MealAssessmentCardState extends State<MealAssessmentCard> {
                             MaterialPageRoute(
                                 builder: (context) => MealAssessmentCard(
                                       proteinMeal: "Small",
+                                      fastingSugar: "${widget.fastingSugar}",
+                                      postBreakfast: "${widget.postBreakfast}",
+                                      postLunch: "${widget.postLunch}",
+                                      bedtimeSugar: "${widget.bedtimeSugar}",
+                                      starchsMeal: "${widget.starchsMeal}",
+                                      vegetablesMeal:
+                                          "${widget.vegetablesMeal}",
+                                      diaryMeal: "${widget.diaryMeal}",
+                                      fatsMeal: "${widget.fatsMeal}",
                                     )));
                       },
                     ),
@@ -458,6 +572,15 @@ class _MealAssessmentCardState extends State<MealAssessmentCard> {
                             MaterialPageRoute(
                                 builder: (context) => MealAssessmentCard(
                                       proteinMeal: "Medium",
+                                      fastingSugar: "${widget.fastingSugar}",
+                                      postBreakfast: "${widget.postBreakfast}",
+                                      postLunch: "${widget.postLunch}",
+                                      bedtimeSugar: "${widget.bedtimeSugar}",
+                                      starchsMeal: "${widget.starchsMeal}",
+                                      vegetablesMeal:
+                                          "${widget.vegetablesMeal}",
+                                      diaryMeal: "${widget.diaryMeal}",
+                                      fatsMeal: "${widget.fatsMeal}",
                                     )));
                       },
                     ),
@@ -483,6 +606,15 @@ class _MealAssessmentCardState extends State<MealAssessmentCard> {
                             MaterialPageRoute(
                                 builder: (context) => MealAssessmentCard(
                                       proteinMeal: "Large",
+                                      fastingSugar: "${widget.fastingSugar}",
+                                      postBreakfast: "${widget.postBreakfast}",
+                                      postLunch: "${widget.postLunch}",
+                                      bedtimeSugar: "${widget.bedtimeSugar}",
+                                      starchsMeal: "${widget.starchsMeal}",
+                                      vegetablesMeal:
+                                          "${widget.vegetablesMeal}",
+                                      diaryMeal: "${widget.diaryMeal}",
+                                      fatsMeal: "${widget.fatsMeal}",
                                     )));
                       },
                     ),
@@ -569,8 +701,6 @@ class _MealAssessmentCardState extends State<MealAssessmentCard> {
                     ),
                   ],
                 ),
-                new Text("${widget.fastingSugar}"),
-                new Text("${widget.starchsMeal}"),
                 SizedBox(height: size.height * .02),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -604,6 +734,15 @@ class _MealAssessmentCardState extends State<MealAssessmentCard> {
                     ),
                   ],
                 ),
+                /*new Text("${widget.fastingSugar}"),
+                new Text("${widget.postBreakfast}"),
+                new Text("${widget.postLunch}"),
+                new Text("${widget.bedtimeSugar}"),
+                new Text("${widget.starchsMeal}"),
+                new Text("${widget.vegetablesMeal}"),
+                new Text("${widget.diaryMeal}"),
+                new Text("${widget.fatsMeal}"),
+                new Text("${widget.proteinMeal}"),*/
                 Container(
                   height: size.height * .07,
                 ),
