@@ -36,7 +36,7 @@ class LifestylesQuestionCard extends StatelessWidget {
           child: Column(
             children: <Widget>[
               //Icon(Icons.hourglass_empty, color: Colors.white),
-              Image.asset(imgString, height: 65),
+              Image.asset(imgString, height: 65, width: 95),
               Spacer(),
               Text(
                 cardName,

@@ -1,6 +1,7 @@
 import 'package:diabetes_assistant/src/data/rest_data_service.dart';
 import 'package:diabetes_assistant/src/presenters/self_assessment_card.dart';
 import 'package:diabetes_assistant/src/screens/self_assessment.dart';
+import 'package:diabetes_assistant/src/widgets/bottom_nav_bar.dart';
 import 'package:diabetes_assistant/src/widgets/lifestyles_question_card.dart';
 import 'package:flutter/material.dart';
 
@@ -118,7 +119,7 @@ class _EmotionsAssessmentCardState extends State<EmotionsAssessmentCard> {
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: <Widget>[
                       LifestylesQuestionCard(
-                        imgString: "assets/icons/recordings_menu.png",
+                        imgString: "assets/icons/happy_emotion.png",
                         cardName: "Happy",
                         press: () {
                           Navigator.pushReplacement(
@@ -132,7 +133,7 @@ class _EmotionsAssessmentCardState extends State<EmotionsAssessmentCard> {
                         },
                       ),
                       LifestylesQuestionCard(
-                        imgString: "assets/icons/recordings_menu.png",
+                        imgString: "assets/icons/cool_emotion.png",
                         cardName: "Cool",
                         press: () {
                           Navigator.pushReplacement(
@@ -156,7 +157,7 @@ class _EmotionsAssessmentCardState extends State<EmotionsAssessmentCard> {
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: <Widget>[
                       LifestylesQuestionCard(
-                        imgString: "assets/icons/recordings_menu.png",
+                        imgString: "assets/icons/sad_emotion.png",
                         cardName: "Sad",
                         press: () {
                           Navigator.pushReplacement(
@@ -170,7 +171,7 @@ class _EmotionsAssessmentCardState extends State<EmotionsAssessmentCard> {
                         },
                       ),
                       LifestylesQuestionCard(
-                        imgString: "assets/icons/recordings_menu.png",
+                        imgString: "assets/icons/angry_emotion.png",
                         cardName: "Angry",
                         press: () {
                           Navigator.pushReplacement(
@@ -213,11 +214,12 @@ class _EmotionsAssessmentCardState extends State<EmotionsAssessmentCard> {
 
                                 print("fastingSugar" + "postBreakfast");
 
-                                Navigator.pushReplacement(
+                                /* Navigator.pushReplacement(
                                     context,
                                     MaterialPageRoute(
-                                        builder: (context) =>
-                                            AssessmentScreen()));
+                                        builder: (context) => BottomNavBar()));*/
+                                Navigator.of(context)
+                                    .popUntil((route) => route.isFirst);
                               }
                             },
                           ),

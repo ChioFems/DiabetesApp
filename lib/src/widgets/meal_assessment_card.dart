@@ -554,15 +554,15 @@ class _MealAssessmentCardState extends State<MealAssessmentCard> {
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: <Widget>[
                     LifestylesQuestionCard(
-                      imgString: "assets/icons/recordings_menu.png",
+                      imgString: "assets/icons/starch_meals.png",
                       cardName: "Starch",
                       press: () {
                         createStarchAlertDialog(context);
                       },
                     ),
                     LifestylesQuestionCard(
-                      imgString: "assets/icons/recordings_menu.png",
-                      cardName: "Vegetables",
+                      imgString: "assets/icons/veggies_meals.png",
+                      cardName: "Veggies",
                       press: () {
                         createVegetablesAlertDialog(context);
                       },
@@ -576,7 +576,7 @@ class _MealAssessmentCardState extends State<MealAssessmentCard> {
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: <Widget>[
                     LifestylesQuestionCard(
-                      imgString: "assets/icons/recordings_menu.png",
+                      imgString: "assets/icons/diary_meals.png",
                       cardName: "Diary",
                       press: () {
                         createDiaryAlertDialog(context);
@@ -589,14 +589,14 @@ class _MealAssessmentCardState extends State<MealAssessmentCard> {
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: <Widget>[
                     LifestylesQuestionCard(
-                      imgString: "assets/icons/recordings_menu.png",
+                      imgString: "assets/icons/fats_meals.png",
                       cardName: "Fats",
                       press: () {
                         createFatsAlertDialog(context);
                       },
                     ),
                     LifestylesQuestionCard(
-                      imgString: "assets/icons/recordings_menu.png",
+                      imgString: "assets/icons/protein_meals.png",
                       cardName: "Protein",
                       press: () {
                         createProteinAlertDialog(context);

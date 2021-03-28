@@ -63,6 +63,21 @@ flutter:
    - assets/icons/menu.png
    - assets/icons/search.png
    - assets/icons/share.png
+   - assets/icons/protein_meals.png
+   - assets/icons/starch_meals.png
+   - assets/icons/fats_meals.png
+   - assets/icons/diary_meals.png
+   - assets/icons/veggies_meals.png
+   - assets/icons/running_exercise.png
+   - assets/icons/swimming_exercise.png
+   - assets/icons/cycling_exercise.png
+   - assets/icons/walking_exercise.png
+   - assets/icons/acrobatics_exercise.png
+   - assets/icons/gymnastics_exercise.png
+   - assets/icons/happy_emotion.png
+   - assets/icons/cool_emotion.png
+   - assets/icons/sad_emotion.png
+   - assets/icons/angry_emotion.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

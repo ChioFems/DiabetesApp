@@ -507,14 +507,14 @@ class _PhysicalExerciseAssessmentCardState
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: <Widget>[
                     LifestylesQuestionCard(
-                      imgString: "assets/icons/recordings_menu.png",
+                      imgString: "assets/icons/running_exercise.png",
                       cardName: "Running",
                       press: () {
                         createRunningAlertDialog(context);
                       },
                     ),
                     LifestylesQuestionCard(
-                      imgString: "assets/icons/recordings_menu.png",
+                      imgString: "assets/icons/swimming_exercise.png",
                       cardName: "Swimming",
                       press: () {
                         createSwimmingAlertDialog(context);
@@ -531,14 +531,14 @@ class _PhysicalExerciseAssessmentCardState
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: <Widget>[
                     LifestylesQuestionCard(
-                      imgString: "assets/icons/recordings_menu.png",
+                      imgString: "assets/icons/cycling_exercise.png",
                       cardName: "Cycling",
                       press: () {
                         createCyclingAlertDialog(context);
                       },
                     ),
                     LifestylesQuestionCard(
-                      imgString: "assets/icons/recordings_menu.png",
+                      imgString: "assets/icons/walking_exercise.png",
                       cardName: "Walking",
                       press: () {
                         createWalkingAlertDialog(context);
@@ -551,14 +551,14 @@ class _PhysicalExerciseAssessmentCardState
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: <Widget>[
                     LifestylesQuestionCard(
-                      imgString: "assets/icons/recordings_menu.png",
+                      imgString: "assets/icons/acrobatics_exercise.png",
                       cardName: "Acrobatics",
                       press: () {
                         createAcrobaticsAlertDialog(context);
                       },
                     ),
                     LifestylesQuestionCard(
-                      imgString: "assets/icons/recordings_menu.png",
+                      imgString: "assets/icons/gymnastics_exercise.png",
                       cardName: "Gymnastics",
                       press: () {
                         createGymnasticsAlertDialog(context);
