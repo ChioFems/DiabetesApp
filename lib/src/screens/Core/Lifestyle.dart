@@ -1,12 +1,13 @@
-import 'package:diabetes_assistant/src/screens/RecordingsQuestionnaire.dart';
+import 'LifestyleMeals.dart';
+import 'LifestylePhysicalActivity.dart';
 import 'package:diabetes_assistant/src/widgets/bottom_nav_bar.dart';
-import 'package:diabetes_assistant/src/widgets/recordings_card.dart';
+import 'package:diabetes_assistant/src/widgets/lifestyles_card.dart';
 import 'package:diabetes_assistant/src/widgets/search_bar.dart';
 import 'package:flutter/material.dart';
 
-import '../../constants.dart';
+import '../../../constants.dart';
 
-class RecordingsScreen extends StatelessWidget {
+class LifestyleScreen extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
@@ -20,9 +21,9 @@ class RecordingsScreen extends StatelessWidget {
             // Here the height of the container is 45% of my total height
             height: size.height * .45,
             decoration: BoxDecoration(
-              color: kRecordingsLightColor,
+              color: kLifestyleLightColor,
               image: DecorationImage(
-                image: AssetImage("assets/icons/recordings_clear.png"),
+                image: AssetImage("assets/icons/lifestyles_clear.png"),
                 fit: BoxFit.fitWidth,
               ),
             ),
@@ -36,7 +37,7 @@ class RecordingsScreen extends StatelessWidget {
                   children: <Widget>[
                     SizedBox(height: size.height * 0.05),
                     Text(
-                      "Glucometer Readings",
+                      "Life Styles",
                       style: Theme.of(context)
                           .textTheme
                           .display1
@@ -44,7 +45,7 @@ class RecordingsScreen extends StatelessWidget {
                     ),
                     SizedBox(height: 10),
                     Text(
-                      "Daily Readings",
+                      "Daily Habits",
                       style:
                           TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
                     ),
@@ -53,7 +54,7 @@ class RecordingsScreen extends StatelessWidget {
                       width:
                           size.width * .5, // It takes 60% of total screen width
                       child: Text(
-                        "Glucose is a simple sugar, and approximately 4 g of glucose are present in the blood of a 70 kg human at all times.",
+                        "Is the way you live including your style, attitudes and possessions. Daily habits and choices.",
                         style: TextStyle(
                           fontWeight: FontWeight.w300,
                           fontSize: 15,
@@ -68,37 +69,39 @@ class RecordingsScreen extends StatelessWidget {
                       spacing: 20,
                       runSpacing: 20,
                       children: <Widget>[
-                        RecordingsCard(
-                          recordingName: "Fasting Blood Sugar",
+                        LifestylesCard(
+                          recordingName: "Meal Intake",
                           press: () {
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) =>
-                                        RecordingsQuestionnaire(
+                                    builder: (context) => LifestylesMeals(
                                           qnsText:
-                                              "What is your fasting blood sugar?",
+                                              "Select your Meal Category/ Group",
                                           save: () {
                                             Navigator.pop(context);
                                           },
                                         )));
                           },
                         ),
-                        RecordingsCard(
-                          recordingName: "Random Blood Sugar",
+                        LifestylesCard(
+                          recordingName: "Physical Exercise",
                           press: () {
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) =>
-                                        RecordingsQuestionnaire(
+                                    builder: (context) => LifestylesPhysical(
                                           qnsText:
-                                              "What is your random blood sugar?",
+                                              "Select your Exercise Category/ Group",
                                           save: () {
                                             Navigator.pop(context);
                                           },
                                         )));
                           },
+                        ),
+                        LifestylesCard(
+                          recordingName: "Other Questionnaires",
+                          press: () {},
                         ),
                       ],
                     ),

@@ -3,7 +3,7 @@ import 'package:diabetes_assistant/src/widgets/education_card.dart';
 import 'package:diabetes_assistant/src/widgets/search_bar.dart';
 import 'package:flutter/material.dart';
 
-import '../../constants.dart';
+import '../../../constants.dart';
 
 class EducationScreen extends StatelessWidget {
   // This widget is the root of your application.

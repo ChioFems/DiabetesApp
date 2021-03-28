@@ -1,51 +1,31 @@
 import 'package:diabetes_assistant/src/widgets/lifestyles_question_card.dart';
 import 'package:flutter/material.dart';
 
-import '../../constants.dart';
+import '../../../constants.dart';
 
-class LifestylesPhysical extends StatelessWidget {
+class LifestylesMeals extends StatelessWidget {
   final String qnsText;
   final Function save;
-  const LifestylesPhysical({
+  const LifestylesMeals({
     Key key,
     this.qnsText,
     this.save,
   }) : super(key: key);
 
-  createAlertDialog(BuildContext context) {
+  createAlertDialog(BuildContext context, Key key) {
     return showDialog(
       context: context,
       builder: (context) {
         return AlertDialog(
-          title: Text(
-            "How long did your workout last?",
-            textAlign: TextAlign.center,
-          ),
+          title: Text("Select your portion size"),
           content: Container(
-            height: 150,
+            height: 200,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: <Widget>[
-                Flexible(
-                  child: TextField(
-                    textAlign: TextAlign.center,
-                    style: TextStyle(color: kShadowColor),
-                    cursorColor: kShadowColor,
-                    keyboardType: TextInputType.number,
-                    decoration: InputDecoration(
-                      hintText: 'Duration in minutes',
-                      enabledBorder: UnderlineInputBorder(
-                        borderSide: BorderSide(color: kShadowColor),
-                      ),
-                      focusedBorder: UnderlineInputBorder(
-                        borderSide: BorderSide(color: kShadowColor),
-                      ),
-                    ),
-                  ),
-                ),
                 InkWell(
                   onTap: () {
-                    Navigator.pop(context);
+                    Navigator.pop(context, key);
                   },
                   child: Container(
                     // width: MediaQuery.of(context).size.width,
@@ -56,7 +36,47 @@ class LifestylesPhysical extends StatelessWidget {
                       borderRadius: BorderRadius.circular(8.0),
                     ),
                     child: Center(
-                      child: Text("Submit",
+                      child: Text("Small",
+                          style: Theme.of(context).textTheme.title.copyWith(
+                                color: Colors.white,
+                              )),
+                    ),
+                  ),
+                ),
+                InkWell(
+                  onTap: () {
+                    Navigator.pop(context, key);
+                  },
+                  child: Container(
+                    // width: MediaQuery.of(context).size.width,
+                    key: key,
+                    height: 50,
+                    decoration: BoxDecoration(
+                      color: kLifestyleColor,
+                      borderRadius: BorderRadius.circular(8.0),
+                    ),
+                    child: Center(
+                      child: Text("Medium",
+                          style: Theme.of(context).textTheme.title.copyWith(
+                                color: Colors.white,
+                              )),
+                    ),
+                  ),
+                ),
+                InkWell(
+                  onTap: () {
+                    Navigator.pop(context, key);
+                  },
+                  child: Container(
+                    // width: MediaQuery.of(context).size.width,
+                    key: key,
+                    height: 50,
+                    decoration: BoxDecoration(
+                      color: kLifestyleColor,
+                      borderRadius: BorderRadius.circular(8.0),
+                    ),
+                    child: Center(
+                      child: Text("Large",
                           style: Theme.of(context).textTheme.title.copyWith(
                                 color: Colors.white,
                               )),
@@ -112,36 +132,16 @@ class LifestylesPhysical extends StatelessWidget {
                   children: <Widget>[
                     LifestylesQuestionCard(
                       imgString: "assets/icons/self_recordings.png",
-                      cardName: "Running",
+                      cardName: "Starch",
                       press: () {
-                        createAlertDialog(context);
+                        createAlertDialog(context, key);
                       },
                     ),
                     LifestylesQuestionCard(
                       imgString: "assets/icons/self_recordings.png",
-                      cardName: "Swimming",
+                      cardName: "Vegetables",
                       press: () {
-                        createAlertDialog(context);
-                      },
-                    ),
-                  ],
-                ),
-                SizedBox(height: size.height * .02),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: <Widget>[
-                    LifestylesQuestionCard(
-                      imgString: "assets/icons/self_recordings.png",
-                      cardName: "Cycling",
-                      press: () {
-                        createAlertDialog(context);
-                      },
-                    ),
-                    LifestylesQuestionCard(
-                      imgString: "assets/icons/self_recordings.png",
-                      cardName: "Walking",
-                      press: () {
-                        createAlertDialog(context);
+                        createAlertDialog(context, key);
                       },
                     ),
                   ],
@@ -152,16 +152,29 @@ class LifestylesPhysical extends StatelessWidget {
                   children: <Widget>[
                     LifestylesQuestionCard(
                       imgString: "assets/icons/self_recordings.png",
-                      cardName: "Acrobatics",
+                      cardName: "Diary",
                       press: () {
-                        createAlertDialog(context);
+                        createAlertDialog(context, key);
+                      },
+                    ),
+                  ],
+                ),
+                SizedBox(height: size.height * .02),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: <Widget>[
+                    LifestylesQuestionCard(
+                      imgString: "assets/icons/self_recordings.png",
+                      cardName: "Fats",
+                      press: () {
+                        createAlertDialog(context, key);
                       },
                     ),
                     LifestylesQuestionCard(
                       imgString: "assets/icons/self_recordings.png",
-                      cardName: "Gymnastics",
+                      cardName: "Protein",
                       press: () {
-                        createAlertDialog(context);
+                        createAlertDialog(context, key);
                       },
                     ),
                   ],

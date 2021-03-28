@@ -1,11 +1,12 @@
+import 'package:diabetes_assistant/src/screens/core/RecordingsQuestionnaire.dart';
 import 'package:diabetes_assistant/src/widgets/bottom_nav_bar.dart';
-import 'package:diabetes_assistant/src/widgets/medication_card.dart';
+import 'package:diabetes_assistant/src/widgets/recordings_card.dart';
 import 'package:diabetes_assistant/src/widgets/search_bar.dart';
 import 'package:flutter/material.dart';
 
-import '../../constants.dart';
+import '../../../constants.dart';
 
-class MedicationScreen extends StatelessWidget {
+class RecordingsScreen extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
@@ -19,9 +20,9 @@ class MedicationScreen extends StatelessWidget {
             // Here the height of the container is 45% of my total height
             height: size.height * .45,
             decoration: BoxDecoration(
-              color: kMedicationLightColor,
+              color: kRecordingsLightColor,
               image: DecorationImage(
-                image: AssetImage("assets/icons/medication_clear.png"),
+                image: AssetImage("assets/icons/recordings_clear.png"),
                 fit: BoxFit.fitWidth,
               ),
             ),
@@ -35,7 +36,7 @@ class MedicationScreen extends StatelessWidget {
                   children: <Widget>[
                     SizedBox(height: size.height * 0.05),
                     Text(
-                      "My Medication",
+                      "Glucometer Readings",
                       style: Theme.of(context)
                           .textTheme
                           .display1
@@ -43,7 +44,7 @@ class MedicationScreen extends StatelessWidget {
                     ),
                     SizedBox(height: 10),
                     Text(
-                      "Daily Prescriptions",
+                      "Daily Readings",
                       style:
                           TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
                     ),
@@ -52,7 +53,7 @@ class MedicationScreen extends StatelessWidget {
                       width:
                           size.width * .5, // It takes 60% of total screen width
                       child: Text(
-                        "A medication is a drug used to diagnose, cure, treat or prevent disease. Don't forhet to take your prescriptions.",
+                        "Glucose is a simple sugar, and approximately 4 g of glucose are present in the blood of a 70 kg human at all times.",
                         style: TextStyle(
                           fontWeight: FontWeight.w300,
                           fontSize: 15,
@@ -67,13 +68,37 @@ class MedicationScreen extends StatelessWidget {
                       spacing: 20,
                       runSpacing: 20,
                       children: <Widget>[
-                        MedicationCard(
-                          recordingName: "Panadol - (3x3) 4 days",
-                          press: () {},
+                        RecordingsCard(
+                          recordingName: "Fasting Blood Sugar",
+                          press: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) =>
+                                        RecordingsQuestionnaire(
+                                          qnsText:
+                                              "What is your fasting blood sugar?",
+                                          save: () {
+                                            Navigator.pop(context);
+                                          },
+                                        )));
+                          },
                         ),
-                        MedicationCard(
-                          recordingName: "Diclofenac - (2x3) 7 days",
-                          press: () {},
+                        RecordingsCard(
+                          recordingName: "Random Blood Sugar",
+                          press: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) =>
+                                        RecordingsQuestionnaire(
+                                          qnsText:
+                                              "What is your random blood sugar?",
+                                          save: () {
+                                            Navigator.pop(context);
+                                          },
+                                        )));
+                          },
                         ),
                       ],
                     ),

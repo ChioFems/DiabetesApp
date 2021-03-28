@@ -1,13 +1,11 @@
-import 'LifestyleMeals.dart';
-import 'LifestylePhysicalActivity.dart';
 import 'package:diabetes_assistant/src/widgets/bottom_nav_bar.dart';
-import 'package:diabetes_assistant/src/widgets/lifestyles_card.dart';
+import 'package:diabetes_assistant/src/widgets/medication_card.dart';
 import 'package:diabetes_assistant/src/widgets/search_bar.dart';
 import 'package:flutter/material.dart';
 
-import '../../constants.dart';
+import '../../../constants.dart';
 
-class LifestyleScreen extends StatelessWidget {
+class MedicationScreen extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
@@ -21,9 +19,9 @@ class LifestyleScreen extends StatelessWidget {
             // Here the height of the container is 45% of my total height
             height: size.height * .45,
             decoration: BoxDecoration(
-              color: kLifestyleLightColor,
+              color: kMedicationLightColor,
               image: DecorationImage(
-                image: AssetImage("assets/icons/lifestyles_clear.png"),
+                image: AssetImage("assets/icons/medication_clear.png"),
                 fit: BoxFit.fitWidth,
               ),
             ),
@@ -37,7 +35,7 @@ class LifestyleScreen extends StatelessWidget {
                   children: <Widget>[
                     SizedBox(height: size.height * 0.05),
                     Text(
-                      "Life Styles",
+                      "My Medication",
                       style: Theme.of(context)
                           .textTheme
                           .display1
@@ -45,7 +43,7 @@ class LifestyleScreen extends StatelessWidget {
                     ),
                     SizedBox(height: 10),
                     Text(
-                      "Daily Habits",
+                      "Daily Prescriptions",
                       style:
                           TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
                     ),
@@ -54,7 +52,7 @@ class LifestyleScreen extends StatelessWidget {
                       width:
                           size.width * .5, // It takes 60% of total screen width
                       child: Text(
-                        "Is the way you live including your style, attitudes and possessions. Daily habits and choices.",
+                        "A medication is a drug used to diagnose, cure, treat or prevent disease. Don't forhet to take your prescriptions.",
                         style: TextStyle(
                           fontWeight: FontWeight.w300,
                           fontSize: 15,
@@ -69,38 +67,12 @@ class LifestyleScreen extends StatelessWidget {
                       spacing: 20,
                       runSpacing: 20,
                       children: <Widget>[
-                        LifestylesCard(
-                          recordingName: "Meal Intake",
-                          press: () {
-                            Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                    builder: (context) => LifestylesMeals(
-                                          qnsText:
-                                              "Select your Meal Category/ Group",
-                                          save: () {
-                                            Navigator.pop(context);
-                                          },
-                                        )));
-                          },
+                        MedicationCard(
+                          recordingName: "Panadol - (3x3) 4 days",
+                          press: () {},
                         ),
-                        LifestylesCard(
-                          recordingName: "Physical Exercise",
-                          press: () {
-                            Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                    builder: (context) => LifestylesPhysical(
-                                          qnsText:
-                                              "Select your Exercise Category/ Group",
-                                          save: () {
-                                            Navigator.pop(context);
-                                          },
-                                        )));
-                          },
-                        ),
-                        LifestylesCard(
-                          recordingName: "Other Questionnaires",
+                        MedicationCard(
+                          recordingName: "Diclofenac - (2x3) 7 days",
                           press: () {},
                         ),
                       ],

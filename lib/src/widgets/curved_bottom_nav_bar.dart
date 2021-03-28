@@ -1,10 +1,10 @@
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:diabetes_assistant/constants.dart';
-import 'package:diabetes_assistant/src/screens/Education.dart';
-import 'package:diabetes_assistant/src/screens/Home.dart';
-import 'package:diabetes_assistant/src/screens/Lifestyle.dart';
-import 'package:diabetes_assistant/src/screens/Medication.dart';
-import 'package:diabetes_assistant/src/screens/recordings.dart';
+import 'package:diabetes_assistant/src/screens/Core/Education.dart';
+import 'package:diabetes_assistant/src/screens/Core/Home.dart';
+import 'package:diabetes_assistant/src/screens/Core/Lifestyle.dart';
+import 'package:diabetes_assistant/src/screens/Core/Medication.dart';
+import 'package:diabetes_assistant/src/screens/Core/Recordings.dart';
 import 'package:flutter/material.dart';
 
 class CurvedBottomNavigationBar extends StatefulWidget {

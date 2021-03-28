@@ -14,3 +14,4 @@ const kEducationLightColor = Color(0xFFC7B8F5);
 const kEducationColor = Color(0xFF6044D4);
 const kMedicationLightColor = Color(0xFF6ED1FF);
 const kMedicationColor = Color(0xFF0034AA);
+const kAppMainColor = Color(0xFF0EA394);

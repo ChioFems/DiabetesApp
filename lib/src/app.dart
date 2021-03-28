@@ -1,12 +1,14 @@
 import 'package:diabetes_assistant/constants.dart';
-import 'package:diabetes_assistant/src/screens/Home.dart';
-import 'package:diabetes_assistant/src/screens/Education.dart';
-import 'package:diabetes_assistant/src/screens/RecordingsQuestionnaire.dart';
-import 'package:diabetes_assistant/src/screens/LifestyleMeals.dart';
-import 'package:diabetes_assistant/src/screens/Medication.dart';
-import 'package:diabetes_assistant/src/screens/LifestylePhysicalActivity.dart';
-import 'package:diabetes_assistant/src/screens/Lifestyle.dart';
-import 'package:diabetes_assistant/src/screens/recordings.dart';
+import 'package:diabetes_assistant/src/screens/Core/Home.dart';
+import 'package:diabetes_assistant/src/screens/Auth/Login.dart';
+// import 'package:diabetes_assistant/src/screens/Auth/SignUp.dart';
+import 'package:diabetes_assistant/src/screens/Core/Education.dart';
+import 'package:diabetes_assistant/src/screens/Core/RecordingsQuestionnaire.dart';
+import 'package:diabetes_assistant/src/screens/Core/LifestyleMeals.dart';
+import 'package:diabetes_assistant/src/screens/Core/Medication.dart';
+import 'package:diabetes_assistant/src/screens/Core/LifestylePhysicalActivity.dart';
+import 'package:diabetes_assistant/src/screens/Core/Lifestyle.dart';
+import 'package:diabetes_assistant/src/screens/Core/Recordings.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -22,8 +24,10 @@ class MyApp extends StatelessWidget {
 
     return MaterialApp(
       title: 'DiabAssistant',
-      initialRoute: '/home',
+      initialRoute: '/login',
       routes: <String, WidgetBuilder>{
+        '/login': (BuildContext context) => new Login(),
+        // '/sign-up': (BuildContext context) => new SignUp(),
         '/home': (BuildContext context) => new HomeScreen(),
         '/education': (BuildContext context) => new EducationScreen(),
         '/recordings-questionnaires': (BuildContext context) =>

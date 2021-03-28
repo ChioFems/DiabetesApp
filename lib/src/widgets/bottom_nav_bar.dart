@@ -1,7 +1,4 @@
 import 'package:diabetes_assistant/constants.dart';
-import 'package:diabetes_assistant/src/screens/Home.dart';
-import 'package:diabetes_assistant/src/screens/Lifestyle.dart';
-import 'package:diabetes_assistant/src/screens/recordings.dart';
 import 'package:flutter/material.dart';
 
 class BottomNavBar extends StatelessWidget {
@@ -23,8 +20,7 @@ class BottomNavBar extends StatelessWidget {
             imgSrc: "assets/icons/home.png",
             isActive: true,
             press: () {
-              Navigator.pushReplacement(context,
-                  MaterialPageRoute(builder: (context) => HomeScreen()));
+              Navigator.of(context).pushNamed('/home');
             },
           ),
           BottomNavItem(
@@ -32,8 +28,7 @@ class BottomNavBar extends StatelessWidget {
             imgSrc: "assets/icons/lifestyle.png",
             isActive: false,
             press: () {
-              Navigator.pushReplacement(context,
-                  MaterialPageRoute(builder: (context) => LifestyleScreen()));
+              Navigator.of(context).pushNamed('/lifestyle');
             },
           ),
           BottomNavItem(
@@ -41,8 +36,7 @@ class BottomNavBar extends StatelessWidget {
             imgSrc: "assets/icons/my_records.png",
             isActive: false,
             press: () {
-              Navigator.pushReplacement(context,
-                  MaterialPageRoute(builder: (context) => RecordingsScreen()));
+              Navigator.of(context).pushNamed('/recordings');
             },
           ),
         ],
