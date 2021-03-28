@@ -1,3 +1,4 @@
+import 'package:diabetes_assistant/constants.dart';
 import 'package:diabetes_assistant/src/widgets/bottom_nav_bar.dart';
 import 'package:diabetes_assistant/src/widgets/category_card.dart';
 import 'package:diabetes_assistant/src/widgets/search_bar.dart';
@@ -17,7 +18,7 @@ class HomeScreen extends StatelessWidget {
             // Here the height of the container is 45% of my total height
             height: size.height * .45,
             decoration: BoxDecoration(
-              color: Color(0xFF00BFBB),
+              color: kAppMainColor,
               /*image: DecorationImage(
                 alignment: Alignment.centerLeft,
                 fit: BoxFit.fitHeight,
