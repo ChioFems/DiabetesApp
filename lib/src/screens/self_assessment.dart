@@ -1,5 +1,5 @@
 import 'package:diabetes_assistant/src/screens/recordings_questionnaire.dart';
-import 'package:diabetes_assistant/src/widgets/assessment_card.dart';
+import 'package:diabetes_assistant/src/widgets/blood_sugar_assessment_card.dart';
 import 'package:diabetes_assistant/src/widgets/recordings_card.dart';
 import 'package:diabetes_assistant/src/widgets/search_bar.dart';
 import 'package:flutter/material.dart';
